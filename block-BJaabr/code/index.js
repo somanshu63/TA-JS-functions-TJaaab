@@ -41,18 +41,29 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function addOne(number) {
+  return number + 1 ;
+}
 
 // - Write a Function Expression
-
+const addOne = function (number) {
+  return number + 1 ;
+}
 // - Write an Arrow Function without curly brackets(if possible)
+const addOne = (number) => (number + 1);
 
 // - Write an Arrow Function with curly brackets
+const addOne = (number) => {
+  return number + 1;
+}
 
 // - Execute the function
-
+addOne(6);
 // - Execute the function and store the return value in a variable.
+let returnValue = addOne(6);
 
 // - What is the typeof returnValue
+typeof returnValue is undefined
 
 /* 2. Subtract one
 
@@ -62,18 +73,30 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function substractOne(number) {
+  return number - 1;
+}
 // - Write a Function Expression
+const substractOne = function(number) {
+  return number - 1;
+}
 
 // - Write an Arrow Function without curly brackets(if possible)
+const substractOne = (number) => (number - 1);
 
 // - Write an Arrow Function with curly brackets
+const substractOne = (number) => {
+  return number - 1;
+}
 
 // - Execute the function
+substractOne(5); 
 
 // - Execute the function and store the return value in a variable.
+let returnValue = substractOne(5);
 
 // - What is the typeof returnValue
+typeof returnValue is undefined
 
 /* 3. Add two numbers
 
@@ -83,18 +106,29 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function sum(numA, numB) {
+  return numA + numB;
+}
 // - Write a Function Expression
-
+const sum = function (number) {
+  return numA + numB;
+}
 // - Write an Arrow Function without curly brackets(if possible)
+const sum = (number) => (numA + numB);
 
 // - Write an Arrow Function with curly brackets
+const sum = (number) => {
+  return numA + numB;
+}
 
 // - Execute the function
+sum(24, 47);
 
 // - Execute the function and store the return value in a variable
+let returnValue = sum(23, 36);
 
 // - What is the typeof returnValue
+typeof returnValue is undefined
 
 /* 4. Square of the given value
 
@@ -104,18 +138,30 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function square(num) {
+  return num * num;
+}
 // - Write a Function Expression
+const square = function (num) {
+  return num * num;
+}
 
 // - Write an Arrow Function without curly brackets(if possible)
+const square = (num) => (num * num);
 
 // - Write an Arrow Function with curly brackets
+const square = (num) => {
+  return num * num;
+}
 
 // - Execute the function
+square(7);
 
 // - Execute the function and store the return value in a variable
+let returnValue = square(7);
 
 // - What is the typeof returnValue
+typeof returnValue is undefined
 
 /* 5. Find isGreater
 
@@ -125,18 +171,35 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function isGreater(x, y) {
+  if(x > y){
+    return true;
+  }else {
+    return false;
+  }
+}
 // - Write a Function Expression
+const isGreater = function (x, y) {
+  return (x > y ? true : false);
+}
 
 // - Write an Arrow Function without curly brackets(if possible)
+const isGreater = (x, y) => (x > y ? true : false);
 
 // - Write an Arrow Function with curly brackets
+const isGreater = (x, y) => {
+  return (x > y ? true : false);
+} 
 
 // - Execute the function
+isGreater(3,4);
 
 // - Execute the function and store the return value in a variable
+let returnValue = isGreater(8,4);
 
 // - What is the typeof returnValue
+typeof returnValue is undefined
+
 
 /* 6.
 
@@ -149,17 +212,32 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function oddOrEven(number) {
+  return (number % 2 == 0 ? true : false);
+}
 // - Write an anonymous Function Expression
+const oddOrEven = function (number) {
+  return (number % 2 == 0 ? true : false);
+}
 
 // - Write an named Function Expression
+const oddOrEven = function odeve(number) {
+  return (number % 2 == 0 ? true : false);
+}
 
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
+const oddOrEven = (number) => (number % 2 == 0 ? true : false);
 
 // - Write an Arrow Function with curly brackets
+const oddOrEven = (number) => {
+  (number % 2 == 0 ? true : false);
+}
 
 // - Execute the function
+oddOrEven(6);
 
 // - Execute the function and store the return value in a variable
+let returnValue = oddOrEven(8);
 
 // - What is the typeof returnValue
+typeof returnValue is undefined
