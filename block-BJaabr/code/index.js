@@ -59,11 +59,12 @@ const addOne = (number) => {
 
 // - Execute the function
 addOne(6);
+
 // - Execute the function and store the return value in a variable.
 let returnValue = addOne(6);
 
 // - What is the typeof returnValue
-typeof returnValue is undefined
+typeof returnValue is "number"
 
 /* 2. Subtract one
 
@@ -96,7 +97,7 @@ substractOne(5);
 let returnValue = substractOne(5);
 
 // - What is the typeof returnValue
-typeof returnValue is undefined
+typeof returnValue is "number"
 
 /* 3. Add two numbers
 
@@ -128,7 +129,7 @@ sum(24, 47);
 let returnValue = sum(23, 36);
 
 // - What is the typeof returnValue
-typeof returnValue is undefined
+typeof returnValue is "number"
 
 /* 4. Square of the given value
 
@@ -161,7 +162,7 @@ square(7);
 let returnValue = square(7);
 
 // - What is the typeof returnValue
-typeof returnValue is undefined
+typeof returnValue is "number"
 
 /* 5. Find isGreater
 
@@ -198,7 +199,7 @@ isGreater(3,4);
 let returnValue = isGreater(8,4);
 
 // - What is the typeof returnValue
-typeof returnValue is undefined
+typeof returnValue is "Boolean"
 
 
 /* 6.
@@ -240,4 +241,4 @@ oddOrEven(6);
 let returnValue = oddOrEven(8);
 
 // - What is the typeof returnValue
-typeof returnValue is undefined
+typeof returnValue is "boolean"
