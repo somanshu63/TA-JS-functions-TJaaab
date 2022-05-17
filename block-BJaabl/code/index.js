@@ -27,7 +27,11 @@ addTwoNumbers(20, 32); // 32
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
 function addTwoNumbers(firstNum, secondNum) {
-    alert(`${firstNum + secondNum}`);
+    if(typeof firstNum !== "number" || typeof secondNum !== "number"){
+      alert(`enter valid number`);
+    }else {
+      return firstNum + secondNum;
+    }
 }
 addTwoNumbers(10, 32);
 addTwoNumbers(10, `34`);
