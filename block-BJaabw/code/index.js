@@ -11,10 +11,11 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+function minToSec(min) {
+  return min * 60;
 }
 // - Execute the function with required parameter
+minToSec(20);
 
 /* 2. 
 Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
@@ -26,10 +27,16 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
+function isInRange(lower, upper, number) {
+  if(number < upper && number > lower){
+    return true;
+  } else{
+    return false;
+  }
 }
 // - Execute the function with required parameter
+isInRange(20, 50, 35);
+isInRange(40, 100, 120);
 
 /* 2. calculateBMI
 
@@ -49,8 +56,17 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
-  // Your code
+function calculateBMI(weight, height) {
+  let bmi = (weight / (height * height));
+  if(bmi > 30){
+    return `obese`;
+  } else if(bmi > 25 && bmi < 29.9){
+    return `overweight`;
+  } else if(bmi > 18 && bmi < 24.9){
+    return `normal weight`;
+  } else if(bmi < 18){
+    return `underweight`;
+  } else{}
 }
 
 /* 3. appropiateDrinks
@@ -64,8 +80,21 @@ Create a function that take the age are return the appropiate drink based on the
 
 */
 
-function appropiateDrinks() {
-  // Your code
+function appropiateDrinks(age) {
+  switch (true) {
+    case (age < 14):
+      return `drink fruit juice`;
+      break;
+    case (age > 14 && age < 18):
+      return `drink soda`;
+      break;
+    case (age > 18 && age < 21):  
+      return `drink fruit-flavored beer`;
+      break;
+    case (age > 21):
+      return `drink throat piercing vodka`;
+      break;  
+  }
 }
 
 /* 4. Add two numers or string
@@ -79,8 +108,14 @@ Twist is when user passes anything other than number, or string value you should
 
 */
 
-function sum() {
-  // Your code
+function sum(numA, numB) {
+  if(numA === "string" && numB === "string"){
+    return numA + numB;
+  } else if(numA === "number" && numB === "number"){
+    return numA + numB;
+  } else {
+    return `not a valid input`;
+  }
 }
 
 // Function Test
