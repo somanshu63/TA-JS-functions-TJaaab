@@ -20,6 +20,7 @@ function calculateDogAge(age, rate) {
 */
 
 function calculateMoviesToWatch(age, number) {
+  age = expected_age - current_age;
   return `total number of movies is ${age * number * 4 *12}`;
 }
 
@@ -30,7 +31,8 @@ function calculateMoviesToWatch(age, number) {
 */
 
 function celsiusToFahrenheit(temp) {
-  return `fahrenheit temp is ${temp * 1.8 + 32}`;
+  let fahrenheit = (temp * 1.8 + 32);
+  return `${temp}C is ${fahrenheit}F`;
 }
 
 /*
@@ -40,7 +42,8 @@ function celsiusToFahrenheit(temp) {
 */
 
 function fahrenheitToCelsius(temp) {
-  return `celsius temp is ${(temp - 32) * .5556}`;
+  let celsius = ((temp - 32) * .5556);
+  return `${temp}F is ${celsius}C`;
 }
 
 /*
@@ -50,8 +53,8 @@ function fahrenheitToCelsius(temp) {
   * [ ] Return x times n
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
-let result = 1;
 function pow(n, x) {
+  let result = 1;
   if(n >= 1){
     for(let i = 0; i < x; i++){
       result = result * n;
@@ -143,13 +146,5 @@ min(0, -10); -10
 */
 
 function typeCheck(value) {
-  if(typeof(value) == String){
-    return string;
-  } else if(typeof(value) == Number){
-    return number;
-  } else if(typeof(value) == Boolean){
-    return boolean;
-  } else {
-    return `not a valid Input`;
-  }
+  return typeof value;
 }
